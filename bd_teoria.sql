@@ -27,6 +27,9 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `t_alumnos`
 --
 
+ CREATE database if not exists bd_teoria  DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci;
+  use bd_teoria; 
+
 CREATE TABLE `t_alumnos` (
   `cod_alu` int(11) NOT NULL,
   `nombre` varchar(15) NOT NULL,

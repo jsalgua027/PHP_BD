@@ -27,6 +27,9 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `usuarios`
 --
 
+  CREATE database if not exists bd_foro  DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci;
+  use bd_foro; 
+
 CREATE TABLE `usuarios` (
   `id_usuario` int(11) NOT NULL,
   `nombre` varchar(30) NOT NULL,
