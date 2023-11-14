@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 13-11-2023 a las 13:30:16
+-- Tiempo de generación: 14-11-2023 a las 08:34:06
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.1.17
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `bd_cv`
 --
-CREATE DATABASE IF NOT EXISTS `bd_cv` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci;
-USE `bd_cv`;
 
 -- --------------------------------------------------------
 
@@ -45,7 +43,9 @@ CREATE TABLE `usuarios` (
 
 INSERT INTO `usuarios` (`id_usuario`, `usuario`, `clave`, `nombre`, `dni`, `sexo`, `foto`) VALUES
 (1, 'NachoS', '123456', 'Nacho Salcedo', '75886027', 'hombre', 'no_imagen.jpg'),
-(2, 'Victoria Sampalo', '4567', 'Victoria', '7895431', 'mujer', 'gatos.jpg');
+(2, 'Victoria Sampalo', '4567', 'Victoria', '7895431', 'mujer', 'gatos.jpg'),
+(3, 'Samuel Jimenez', '55555', 'Samuel', '888888', 'hombre', 'pache.jpg'),
+(4, 'Alvaro Martinez', '9999', 'Alvaro', '998656', 'hombre', 'alvaro.jpg');
 
 --
 -- Índices para tablas volcadas
@@ -65,7 +65,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
