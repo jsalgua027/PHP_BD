@@ -26,6 +26,10 @@ SET time_zone = "+00:00";
 --
 -- Estructura de tabla para la tabla `usuarios`
 --
+CREATE database if not exists bd_cv  DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci;
+  use bd_cv; 
+
+
 
 CREATE TABLE `usuarios` (
   `id_usuario` int(11) NOT NULL,
@@ -50,8 +54,7 @@ INSERT INTO `usuarios` (`id_usuario`, `usuario`, `clave`, `nombre`, `dni`, `sexo
 --
 -- Índices para tablas volcadas
 --
-
---
+ 
 -- Indices de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
