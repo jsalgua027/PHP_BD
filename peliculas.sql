@@ -27,6 +27,10 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `peliculas`
 --
 
+ CREATE database if not exists bd_videoclub  DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_spanish_ci;
+  use bd_videoclub; 
+
+
 CREATE TABLE `peliculas` (
   `idPelicula` int(11) NOT NULL,
   `titulo` varchar(15) NOT NULL,
